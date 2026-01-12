@@ -107,6 +107,83 @@ body {
     transition: 0.3s;
 }
 
+/* Resource Page Specific Styling */
+.resource-hero {
+    padding: 150px 10% 100px;
+    min-height: 100vh;
+}
+
+.download-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.dl-card {
+    background: var(--card-bg);
+    border: 1px solid #222;
+    padding: 30px;
+    border-radius: 12px;
+    position: relative;
+    transition: 0.3s;
+    backdrop-filter: blur(10px);
+}
+
+.dl-card:hover {
+    border-color: var(--red);
+    transform: scale(1.02);
+}
+
+.dl-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.dl-card p {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.online { background: #00ff00; box-shadow: 0 0 10px #00ff00; }
+.offline { background: #ffaa00; box-shadow: 0 0 10px #ffaa00; }
+
+.btn-download {
+    display: block;
+    text-align: center;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid var(--red);
+    font-weight: 800;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.btn-download:hover {
+    background: var(--red);
+    box-shadow: 0 0 20px var(--red-glow);
+}
+
+.btn-download.disabled {
+    border-color: #333;
+    color: #555;
+    cursor: not-allowed;
+}
+
 .f-card:hover {
     border-color: var(--red);
     transform: translateY(-10px);
