@@ -1,12 +1,11 @@
 particlesJS("particles-js", {
   "particles": {
-    "number": { "value": 90 },
+    "number": { "value": 80 },
     "color": { "value": "#ff0000" },
     "shape": { "type": "circle" },
     "opacity": { "value": 0.5 },
     "size": { "value": 3 },
     "line_linked": { "enable": true, "distance": 150, "color": "#ff0000", "opacity": 0.4, "width": 1 },
     "move": { "enable": true, "speed": 2.5 }
-  },
-  "interactivity": { "events": { "onhover": { "enable": true, "mode": "grab" } } }
+  }
 });
